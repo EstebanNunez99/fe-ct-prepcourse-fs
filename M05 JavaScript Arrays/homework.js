@@ -22,9 +22,11 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   
    var masUno = array.map ((num)=> {
       return num + 1;
    });
+
    return(masUno);
 }
 
@@ -153,11 +155,13 @@ function todosIguales(array) {
    // Tu código:
    var x=array[0];
    var cont = 0;
+
    array.forEach((num)=>{
       if (num !== x ){
          cont = cont + 1; 
       }
    });
+
    if (cont === 0 ){
       return true;
    }else return false ;
